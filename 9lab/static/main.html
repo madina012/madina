@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clubs </title>
+    
+</head>
+<style>
+    .rectangle {
+    position: absolute;
+    width: 1000px;
+    height: 640px;
+    left: 10px;
+    top: 140px;
+    margin-top: -1cm;
+    margin-left: -1cm;
+    background: rgba(191, 176, 147, 0.7);}
+.img1{
+    position:absolute;
+    margin-left: 5cm;
+    margin-top: -1cm;
+    width: 583px;
+    height: 651px;
+    left: 747px;
+    top: 140px; }
+button {
+  background-color: #617462bb; /* Set background color */
+  color: rgb(255, 255, 255); /* Set text color */
+  border: none; /* Remove border */
+  text-align: center; /* Center text */
+  position: absolute;
+  margin-top: 15cm;
+  margin-left: 4cm;
+  width: 250px;
+  height: 70px;
+  padding: 10px 20px;
+  font-size: 36px; /* Set font size */
+  cursor: pointer;
+}
+.name{
+position: absolute;
+width: 235px;
+height: 58px;
+left: 48px;
+top: 25px;
+margin-top: -0.6cm;
+font-family:sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 24px;
+line-height: 29px;
+color: #000000;
+}
+h1{
+position: absolute;
+
+top: 260px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 1000;
+font-size: 60px;
+line-height: 116px;
+color:#000000;
+
+}
+h2{
+position: absolute;
+width: 681px;
+height: 88px;
+left: 36px;
+top: 407px;
+margin-top: 0cm;
+margin-left: 0cm;
+font-family: 'Alef';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 44px;
+
+color: #000000;
+
+}
+h3{
+position: absolute;
+width: 274px;
+height: 65px;
+left: calc(50% - 274px/2 - 344px);
+top: calc(50% - 65px/2 - 640.5px);
+
+font-family: 'Alef';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 65px;
+
+color: #000000;
+
+}
+.button{
+position: absolute;
+width: 274px;
+height: 65px;
+left: calc(50% - 274px/2 - 344px);
+top: calc(50% - 65px/2 - 640.5px);
+font-family: 'Alef';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 65px;
+color: #000000;}
+.bt1{
+box-sizing: border-box;
+position: absolute;
+margin-left: -0.5cm;
+width: 220px;
+height: 60px;
+left: 36px;
+top: 25px;
+border: 2px solid #202020;}
+
+
+.bt2{
+    box-sizing: border-box;
+    position: absolute;
+    width: 303px;
+    height: 105px;
+    left: calc(50% - 303px/2 - 344.5px);
+    top: calc(50% - 105px/2 - 640.5px);
+     border: 2px solid #202020;
+}
+
+.menu{
+position: absolute;
+width: 454px;
+height: 30px;
+left: 920px;
+top: 25px;
+
+font-family: 'Alef';
+font-style: normal;
+font-weight: 1300;
+font-size: 26px;
+line-height: 33px;
+color: #6c4848;
+}
+
+
+a{
+    color:#666060;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+#cm3 {
+    position: absolute;
+    top: 550px;
+    left: 200px;
+    width: 300px;
+    height: 100px;
+    background-color: #BFB093;
+
+}
+footer {
+    position: relative;
+    left: 0;
+    bottom: 55px;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+  }
+h4{
+    position: absolute;
+width: 640px;
+height: 53px;
+left: 770px;
+top: 740px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+
+color: #000000;
+
+}
+#inst{
+    position: absolute;
+width: 48.98px;
+height: 48px;
+left: 72px;
+top: 752px;
+
+background: url(IMG_9635);
+border-radius: 20px;
+}
+#ytube{
+    position: absolute;
+width: 50px;
+height: 48px;
+left: 151px;
+top: 752px;
+
+background: url(IMG_9636);
+border-radius: 20px;
+}
+#tt{
+    position: absolute;
+width: 50px;
+height: 48px;
+left: 231px;
+top: 752px;
+
+background: url(IMG_9637);
+border-radius: 20px;
+}
+@media screen and (max-width: 430px) {
+   
+    .rectangle {
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        left: 10px;
+        top: 140px;
+        margin-top: -1cm;
+        margin-left: -1cm;
+        background: rgba(191, 176, 147, 0.7);}
+
+        .name{
+            position: absolute;
+            width: 135px;
+            height: 18px;
+            left: 18px;
+            top: 15px;
+            margin-top: -2.6px;
+            font-family:sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 8px;
+            color: #000000;
+            }
+
+            .img1{
+                position:absolute;
+                margin-left: -25cm;
+                margin-top: -2.5cm;
+                width:430px;
+                height: 201px;
+                left: 930px;
+                top: 140px; }
+
+                .bt1{
+                    box-sizing: border-box;
+                    position: absolute;
+                    margin-left: -0.5cm;
+                    width: 140px;
+                    height: 40px;
+                    left: 26px;
+                    top: 5px;
+                    border: 2px solid #202020;}
+
+                 h1{
+                        position: absolute;
+                        width: 289px;
+                        height: 116px;
+                        left: 36px;
+                        top: 200px;
+                        margin-left: 0cm;
+                        margin-top: 0cm;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 800;
+                        font-size: 42px;
+                        line-height: 116px;
+                        color:#fcf8f8c1;
+                        
+                        }
+                h2{
+                            position: absolute;
+                            width: 351px;
+                            height: 44px;
+                            left: 36px;
+                            top: 277px;
+                            margin-top: 0cm;
+                            margin-left: 0cm;
+                            font-family: 'Alef';
+                            font-style: normal;
+                            font-weight: 1000;
+                            font-size: 22px;
+                            line-height: 40px;
+                            
+                            color: #f9f6f6;
+                            
+                            }
+
+                            .menu{
+                                position: absolute;
+                                width: 250px;
+                                height: 10px;
+                                left: 180px;
+                                top: -1px;
+                                
+                                font-family: 'Alef';
+                                font-style: normal;
+                                font-weight: 1300;
+                                font-size: 14px;
+                                line-height: 33px;
+                                color: #6c4848;
+                                }
+
+                                #cm3 {
+                                    position: absolute;
+                                    top: 450px;
+                                    left: 115px;
+                                    width: 210px;
+                                    height: 70px;
+                                    background-color: #BFB093;
+                                
+                                }
+
+                                h4{
+                                    position: absolute;
+                                width: 640px;
+                                height: 53px;
+                                left: 770px;
+                                top: 740px;
+                                
+                                font-family: 'Manrope';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 15px;
+                                line-height: 22px;
+                                
+                                color: #000000;
+                                
+                                }
+                                #inst{
+                                    position: absolute;
+                                width: 10px;
+                                height: 18px;
+                                left: 130px;
+                                top: 680px;
+                                
+                                background: url(IMG_9635);
+                                border-radius: 20px;
+                                }
+                                #ytube{
+                                    position: absolute;
+                                    width: 10px;
+                                    height: 18px;
+                                    left: 190px;
+                                    top: 680px;
+                                    
+                                
+                                background: url(IMG_9636);
+                                border-radius: 20px;
+                                }
+                                #tt{
+                                    position: absolute;
+                                    width: 10px;
+                                    height: 18px;
+                                    left: 250px;
+                                    top: 680px;
+                                
+                                background: url(IMG_9637);
+                                border-radius: 20px;
+                                }
+                                h4{
+                                position: absolute;
+                                width: 640px;
+                                height: 53px;
+                                left:30px;
+                                top: 710px;
+                                
+                                font-family: 'Manrope';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 10px;
+                                line-height: 22px;
+                                
+                                color: #000000;
+                                
+                                }
+}
+</style>
+<body>
+   
+
+    <div class="bt1"></div>
+    <div class="name">
+        <p>Madina Kadyrkhanova</p>
+    </div>
+    <div class="rectangle"></div>
+    <div class="bt2"></div>
+    <div class="img1">
+        <img src="/Users/madina/Desktop/endterm/9lab/img3/IMG_1924.JPG " height="640" width="500" >
+    </div>
+    <h1>Children's  clubs</h1>
+    <h2>With us, the child learns communication skills with other children, and also gets used to discipline</h2>
+    
+    <div class="menu">
+    <a href="index.html"><p>Home  &nbsp;&emsp; <a href="home.html"> Kids &nbsp;&emsp;  <a href="parents.html"> For parents  &nbsp;&emsp; Just   </p></a>
+
+    </div>
+<footer></footer>
+<h4>©2023harmonayoga.com &nbsp;&emsp;&nbsp;&emsp;&nbsp;&emsp;Terms&nbsp;&emsp;&nbsp;&emsp;&nbsp;Privacy&nbsp;&emsp;&nbsp;&emsp; Website feedback</h4>
+<div id="inst"><a href =" https://instagram.com/madlna_kk?igshid=YmMyMTA2M2Y="><img src="img/icons8-instagram-32.png" alt="inst" width="50px" height=50px" ></a></div>
+<div id="ytube"><a href = "https://youtu.be/J4jS0KnuSdk"><img src="img/icons8-youtube-50.png" alt="ytube" width="50px" height="50px"></a></div>
+<div id="tt"><img src="img/icons8-tiktok-48.png" alt="tt" width="50px" height="48px"></div>
+<a href="/9lab/static/index1.html">
+<button>Sign in </button>
+</a>
+</body>
+</html>

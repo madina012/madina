@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <title>All Users</title>
+    <style>
+      body {
+  font-family: Arial, sans-serif;
+  
+  
+  font-family: Arial, sans-serif;
+  height: 200px;
+  background: radial-gradient(40% 50%, #FAECD5, #CAE4D8);
+}
+
+
+      table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 20px 0;
+    }
+    
+    th, td {
+      text-align: left;
+      padding: 8px;
+      border: 1px solid #ddd;
+    }
+    
+    th {
+      background-color: #5a765a;
+      color: white;
+    }
+    
+   
+    
+    button {
+      background-color: #ff03037c;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    
+    button:hover {
+      background-color: #3e8e41;
+    }
+    
+    </style>
+  </head>
+  <body>
+    <h1>All users:</h1>
+    <table>
+      	<tr>
+          <th>id</th>
+          <th>Name</th>
+          <th>Phone</th>
+          <th>Year of birth</th>
+          <th>Update</th>
+          <th>Delete</th>
+    	</tr>
+      	{{range .}}
+      			<tr>
+              		<td>{{.Child_id}}</td>
+              		<td>{{.Name}}</td>
+                  <td>{{.Phone}}</td>
+                  <td>{{.Year_of_birth}}</td>
+                  <td>
+                    <form action="/update" method="post">
+                      <button name="id" value="{{.Child_id}}">Update</button>
+                    </form>
+                  </td>
+                  <td>
+                    <form action="/delete" method="post">
+                      <button name="id" value="{{.Child_id}}">Delete</button>
+                    </form>
+                  </td>
+      			</tr>
+      	{{end}}
+    </table>
+    <br>
+    <a href="index.html">Go to main page</a>
+  </body>
+</html>

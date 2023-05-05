@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <title>All Clubs</title>
+    <style>
+      body {
+  font-family: Arial, sans-serif;
+  
+  
+  font-family: Arial, sans-serif;
+  height: 200px;
+  background: radial-gradient(40% 50%, #FAECD5, #CAE4D8);
+}
+
+
+      table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 20px 0;
+    }
+    
+    th, td {
+      text-align: left;
+      padding: 8px;
+      border: 1px solid #ddd;
+    }
+    
+    th {
+      background-color: #5a765a;
+      color: white;
+    }
+    
+   
+    
+    button {
+      background-color: #ff03037c;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    
+    button:hover {
+      background-color: #3e8e41;
+    }
+    
+    </style>
+  </head>
+  <body>
+    <h1>All clubs:</h1>
+    <table>
+      	<tr>
+          <th>id</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Update</th>
+          <th>Delete</th>
+    	</tr>
+      	{{range .}}
+      			<tr>
+              		<td>{{.Club_id}}</td>
+              		<td>{{.Club_name}}</td>
+                  <td>{{.Price}}</td>
+                  <td>
+                    <form action="/updateClub" method="post">
+                      <button name="id" value="{{.Club_id}}">Update</button>
+                    </form>
+                  </td>
+                  <td>
+                    <form action="/deleteClub" method="post">
+                      <button name="id" value="{{.Club_id}}">Delete</button>
+                    </form>
+                  </td>
+      			</tr>
+      	{{end}}
+    </table>
+    <br>
+    <a href="index.html">Go to main page</a>
+  </body>
+</html>
